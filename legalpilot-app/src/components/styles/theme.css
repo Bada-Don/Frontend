@@ -1,0 +1,79 @@
+/* src/styles/theme.css */
+:root {
+  /* Base Colors */
+  --color-primary-start: #667eea;
+  --color-primary-end: #764ba2;
+  --color-accent-start: #facc15; /* Tailwind yellow-400 */
+  --color-accent-end: #ec4899; /* Tailwind pink-400 */
+
+  /* Text Colors */
+  --color-text-primary: #1f2937; /* Tailwind gray-800 */
+  --color-text-secondary: #4b5563; /* Tailwind gray-600 */
+  --color-text-muted: #6b7280; /* Tailwind gray-500 */
+  --color-text-inverted: #ffffff;
+  --color-text-hero-muted: #e5e7eb; /* Tailwind gray-100/200 for hero paragraph */
+  --color-text-gradient-fallback: var(
+    --color-primary-start
+  ); /* Fallback for gradient text */
+
+  /* Background Colors */
+  --color-bg-default: #f9fafb; /* Tailwind gray-50 */
+  --color-bg-card: #ffffff;
+  --color-bg-nav-blur: rgba(255, 255, 255, 0.9);
+  --color-bg-hero-overlay: linear-gradient(
+    135deg,
+    rgba(102, 126, 234, 0.1) 0%,
+    rgba(118, 75, 162, 0.1) 100%
+  );
+  --color-bg-glass-card: rgba(255, 255, 255, 0.1);
+  --color-bg-interactive-demo: linear-gradient(
+    135deg,
+    #f8fafc 0%,
+    #e2e8f0 100%
+  );
+
+  /* Gradients */
+  --gradient-primary: linear-gradient(
+    135deg,
+    var(--color-primary-start) 0%,
+    var(--color-primary-end) 100%
+  );
+  --gradient-accent: linear-gradient(
+    135deg,
+    var(--color-accent-start) 0%,
+    var(--color-accent-end) 100%
+  );
+  --gradient-hero: linear-gradient(
+    135deg,
+    #667eea 0%,
+    #764ba2 100%
+  ); /* Specific for hero if needed for overlay */
+  --gradient-hero-text: linear-gradient(
+    to right,
+    #fde047,
+    #f472b6
+  ); /* from-yellow-400 to-pink-400 */
+
+  /* Status Colors */
+  --color-green-status: #34d399; /* Tailwind green-400 */
+  --color-green-check: #10b981; /* Tailwind green-500 for checkmarks */
+
+  /* Links */
+  --color-link: #2563eb; /* Tailwind blue-600 */
+  --color-link-hover: #5b21b6; /* Tailwind purple-700 / or a darker blue */
+
+  /* Borders */
+  --color-border-light: rgba(0, 0, 0, 0.05);
+  --color-border-glass: rgba(255, 255, 255, 0.2);
+  --color-border-nav: #e5e7eb; /* Tailwind gray-200 */
+
+  /* Shadows (alpha versions of colors for box-shadows if needed) */
+  --color-primary-start-alpha-30: rgba(102, 126, 234, 0.3);
+  --color-primary-start-alpha-40: rgba(102, 126, 234, 0.4);
+
+  /* Sizes (can also be managed by Tailwind's theme) */
+  --navbar-height: 4rem; /* Example: 64px */
+
+  --color-bg-nav-blur: rgba(255, 255, 255, 0.9);
+  --color-border-nav: #e5e7eb; /* Tailwind gray-200 */
+}
